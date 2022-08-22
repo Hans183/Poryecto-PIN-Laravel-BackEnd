@@ -62,7 +62,7 @@ class ContactoController extends Controller
                 'cmessage' => $request->get('cmessage'),
             ),
             function ($menssage) use ($request) {
-                $menssage->subject('Contacto Proyecto PIN');
+                $menssage->subject('Contacto Proyecto PIN'); //asunto
                 $menssage->from($request->email);
                 $menssage->to('hvonedelsberg@gmail.com');
             }
