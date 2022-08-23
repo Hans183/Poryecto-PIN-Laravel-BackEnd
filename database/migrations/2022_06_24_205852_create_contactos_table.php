@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('contactos');
         Schema::create('contactos', function (Blueprint $table) {
             $table->string('name');
             $table->string('email');
