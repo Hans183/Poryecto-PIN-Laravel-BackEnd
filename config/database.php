@@ -45,6 +45,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
+<<<<<<< HEAD
             'url' => 'DATABASE_URL',
             'host' => 'DB_HOST', 'cxmgkzhk95kfgbq4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
             'port' => 'DB_PORT', '3306',
@@ -52,6 +53,15 @@ return [
             'username' => 'DB_USERNAME', 'iz2v1bigp5ekf0xs',
             'password' => 'DB_PASSWORD', 'tpklcxurpx2q5905',
             'unix_socket' => 'DB_SOCKET', '',
+=======
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+>>>>>>> parent of a6c8750 (Modifico database, porque ignora env)
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
