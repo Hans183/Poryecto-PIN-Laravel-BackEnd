@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::dropIfExists('posts');
-        Schema::create('posts',300, function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('titulo',200)->unique();
             $table->mediumText('body');
