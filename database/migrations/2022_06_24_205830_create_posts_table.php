@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::dropIfExists('posts');
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo',200)->unique();
+            $table->string('titulo')->unique();
             $table->mediumText('body');
             $table->boolean('publicado')->default(false);
             // 1 autor, puede tener muchos post
