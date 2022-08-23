@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('apellido');
-            $table->string('rut')->unique();
+            $table->string('rut');
             $table->string('email')->unique();
             $table->date('fecha_nacimiento');
             $table->timestamp('email_verified_at')->nullable();
